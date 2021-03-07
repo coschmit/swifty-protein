@@ -7,19 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F03155225F27DCB0097614E /* AtomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03155125F27DCB0097614E /* AtomInfo.swift */; };
+		6F03155525F28EDC0097614E /* PeriodicTableJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F03155425F28EDC0097614E /* PeriodicTableJSON.json */; };
+		6F687F5725F4FBB00046DD20 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F687F5625F4FBB00046DD20 /* art.scnassets */; };
 		6F69954925D6BA8A0021838F /* swifty_proteinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F69954825D6BA8A0021838F /* swifty_proteinApp.swift */; };
 		6F69954B25D6BA8A0021838F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F69954A25D6BA8A0021838F /* ContentView.swift */; };
 		6F69954D25D6BA8C0021838F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F69954C25D6BA8C0021838F /* Assets.xcassets */; };
 		6F69955025D6BA8C0021838F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F69954F25D6BA8C0021838F /* Preview Assets.xcassets */; };
+		6FA41B9825EE55A4009178D5 /* TemplateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA41B9525EE558A009178D5 /* TemplateTableView.swift */; };
+		6FA41BA425EEC67C009178D5 /* ProteinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA41BA325EEC67C009178D5 /* ProteinView.swift */; };
+		6FAF64EA25ECF272002A37C9 /* ProteinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF64E925ECF272002A37C9 /* ProteinListView.swift */; };
+		6FBB98D625EC09AA00492C78 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB98D525EC09AA00492C78 /* LoginView.swift */; };
+		6FC07A2925EF89F700CFE257 /* ProteinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC07A2825EF89F700CFE257 /* ProteinScene.swift */; };
+		6FC07A3025F031C300CFE257 /* AtomConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC07A2F25F031C300CFE257 /* AtomConnections.swift */; };
+		6FC07A3325F1821D00CFE257 /* ProteinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC07A3225F1821D00CFE257 /* ProteinVC.swift */; };
+		6FCB9FDD25ED35DE00F18842 /* ligands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FCB9FDC25ED35DE00F18842 /* ligands.txt */; };
+		6FCD52A725ED98D00009532B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD52A625ED98D00009532B /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F03155125F27DCB0097614E /* AtomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomInfo.swift; sourceTree = "<group>"; };
+		6F03155425F28EDC0097614E /* PeriodicTableJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PeriodicTableJSON.json; sourceTree = "<group>"; };
+		6F687F5625F4FBB00046DD20 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		6F69954525D6BA8A0021838F /* swifty-protein.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swifty-protein.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F69954825D6BA8A0021838F /* swifty_proteinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swifty_proteinApp.swift; sourceTree = "<group>"; };
 		6F69954A25D6BA8A0021838F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F69954C25D6BA8C0021838F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F69954F25D6BA8C0021838F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6F69955125D6BA8C0021838F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA41B9525EE558A009178D5 /* TemplateTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTableView.swift; sourceTree = "<group>"; };
+		6FA41BA325EEC67C009178D5 /* ProteinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinView.swift; sourceTree = "<group>"; };
+		6FAF64E925ECF272002A37C9 /* ProteinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinListView.swift; sourceTree = "<group>"; };
+		6FBB98D525EC09AA00492C78 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6FC07A2825EF89F700CFE257 /* ProteinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinScene.swift; sourceTree = "<group>"; };
+		6FC07A2F25F031C300CFE257 /* AtomConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomConnections.swift; sourceTree = "<group>"; };
+		6FC07A3225F1821D00CFE257 /* ProteinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinVC.swift; sourceTree = "<group>"; };
+		6FCB9FDC25ED35DE00F18842 /* ligands.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ligands.txt; sourceTree = "<group>"; };
+		6FCD52A625ED98D00009532B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +76,18 @@
 		6F69954725D6BA8A0021838F /* swifty-protein */ = {
 			isa = PBXGroup;
 			children = (
+				6F03155425F28EDC0097614E /* PeriodicTableJSON.json */,
+				6FA41B9425EE557B009178D5 /* ViewModel */,
+				6FBB98D425EC094400492C78 /* Controllers */,
+				6FBB98D325EC090700492C78 /* Models */,
+				6FBB98D225EC090000492C78 /* Views */,
 				6F69954825D6BA8A0021838F /* swifty_proteinApp.swift */,
 				6F69954A25D6BA8A0021838F /* ContentView.swift */,
 				6F69954C25D6BA8C0021838F /* Assets.xcassets */,
+				6FCB9FDC25ED35DE00F18842 /* ligands.txt */,
 				6F69955125D6BA8C0021838F /* Info.plist */,
 				6F69954E25D6BA8C0021838F /* Preview Content */,
+				6F687F5625F4FBB00046DD20 /* art.scnassets */,
 			);
 			path = "swifty-protein";
 			sourceTree = "<group>";
@@ -67,6 +98,43 @@
 				6F69954F25D6BA8C0021838F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6FA41B9425EE557B009178D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6FA41B9525EE558A009178D5 /* TemplateTableView.swift */,
+				6FC07A3225F1821D00CFE257 /* ProteinVC.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6FBB98D225EC090000492C78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6FBB98D525EC09AA00492C78 /* LoginView.swift */,
+				6FAF64E925ECF272002A37C9 /* ProteinListView.swift */,
+				6FA41BA325EEC67C009178D5 /* ProteinView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6FBB98D325EC090700492C78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FCD52A625ED98D00009532B /* Data.swift */,
+				6FC07A2825EF89F700CFE257 /* ProteinScene.swift */,
+				6FC07A2F25F031C300CFE257 /* AtomConnections.swift */,
+				6F03155125F27DCB0097614E /* AtomInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6FBB98D425EC094400492C78 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F69955025D6BA8C0021838F /* Preview Assets.xcassets in Resources */,
+				6FCB9FDD25ED35DE00F18842 /* ligands.txt in Resources */,
+				6F687F5725F4FBB00046DD20 /* art.scnassets in Resources */,
 				6F69954D25D6BA8C0021838F /* Assets.xcassets in Resources */,
+				6F03155525F28EDC0097614E /* PeriodicTableJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC07A3325F1821D00CFE257 /* ProteinVC.swift in Sources */,
+				6FA41BA425EEC67C009178D5 /* ProteinView.swift in Sources */,
+				6FA41B9825EE55A4009178D5 /* TemplateTableView.swift in Sources */,
+				6FAF64EA25ECF272002A37C9 /* ProteinListView.swift in Sources */,
+				6FCD52A725ED98D00009532B /* Data.swift in Sources */,
+				6FC07A2925EF89F700CFE257 /* ProteinScene.swift in Sources */,
+				6FBB98D625EC09AA00492C78 /* LoginView.swift in Sources */,
+				6FC07A3025F031C300CFE257 /* AtomConnections.swift in Sources */,
 				6F69954B25D6BA8A0021838F /* ContentView.swift in Sources */,
+				6F03155225F27DCB0097614E /* AtomInfo.swift in Sources */,
 				6F69954925D6BA8A0021838F /* swifty_proteinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
