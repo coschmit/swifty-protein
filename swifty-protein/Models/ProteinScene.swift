@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 import SceneKit
 
 class ProteinScene: SCNScene, SCNNodeRendererDelegate{
@@ -17,10 +18,8 @@ class ProteinScene: SCNScene, SCNNodeRendererDelegate{
         super.init()
         initCamera()
         //background
-        self.background.contents = UIColor(red: 59/255, green: 73/255, blue: 91/255, alpha: 1)
-
+        self.background.contents = UIColor(Color("bg"))
         let protein = pdbFile.split(separator: "\n")
-        print("protein",protein)
         for line in protein {
             let splitedLine = line.split(separator: " ")
             if splitedLine[0] == "ATOM"{

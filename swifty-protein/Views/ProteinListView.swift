@@ -21,6 +21,9 @@ struct ProteinListView: View {
     @State var selected : String = ""
     @State var isDownloading: Bool = false
     
+    @State var isFailed: Bool = false
+    
+    
     let data = ProteinData()
     
     var body: some View {
@@ -73,7 +76,9 @@ struct ProteinListView: View {
                 })
             
             }.navigationBarTitle("proteins list",displayMode: .inline)
-        }
+        }.alert(isPresented: $isFailed, content: {
+            Alert(title: Text("Error"),message: Text("Connection failed"))
+        })
     }
     
     
@@ -82,13 +87,16 @@ struct ProteinListView: View {
         self.isDownloading = true
         data.downloadProteins(name: name) { (response) in
             DispatchQueue.main.async {
+             
                 if let data = response {
                     self.data.pdbFile = data
                     self.isSelected = true
                     self.isDownloading = false
                     return
                 }
-                // need to create alert, [connection failed]
+                // if error
+                self.isFailed = true
+                self.isDownloading = false
             }
         }
     }

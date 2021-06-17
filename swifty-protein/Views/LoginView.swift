@@ -93,7 +93,6 @@ struct LoginView : View {
                         completion(true)
                     }else {
                         completion(false)
-                        print("bruh",context.biometryType.rawValue)
                     }
                 }
             }

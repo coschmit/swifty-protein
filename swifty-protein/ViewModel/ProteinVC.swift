@@ -17,18 +17,21 @@ struct ProteinVC : UIViewControllerRepresentable {
     var pdbFile :String?
     
     var completion : ((Bool,AtomInfo?)->())!
-    
-    
+    let proteinVCKit = ProteinVCKit()
     
     func makeUIViewController(context: Context) -> ProteinVCKit {
-        let proteinVCKit = ProteinVCKit()
+       
         proteinVCKit.pdbfile = self.pdbFile
         proteinVCKit.completion = self.completion
         return proteinVCKit
     }
     
+    func takeScreenShot(view: UIView){
+        proteinVCKit.shareAction(view: view)
+    }
+    
     func updateUIViewController(_ uiViewController: ProteinVCKit, context: Context) {
-
+   
     }
     
     
@@ -38,6 +41,7 @@ class ProteinVCKit: UIViewController {
 
     
     var completion:  ((Bool,AtomInfo?)->())!
+    
     
     var stackView: UIStackView!
     var randomview : UIView!
@@ -93,9 +97,6 @@ class ProteinVCKit: UIViewController {
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        shareAction()
-        return
         let touch = touches.first!
         let location = touch.location(in: proteinScene)
         let hitList = proteinScene.hitTest(location, options: nil)
@@ -128,18 +129,22 @@ class ProteinVCKit: UIViewController {
        
     }
     
-    func shareAction() {
+    func shareAction(view: UIView) {
+   
+        
        UIGraphicsBeginImageContextWithOptions(self.view.frame.size, true, 0.0)
+        self.view.drawHierarchy(in: view.frame, afterScreenUpdates: false)
        self.view.drawHierarchy(in: self.view.frame, afterScreenUpdates: false)
        let img = UIGraphicsGetImageFromCurrentImageContext()
        UIGraphicsEndImageContext()
-       
+        
        if let img = img {
            let objectsToShare = [img] as [UIImage]
            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
         activityVC.excludedActivityTypes = [UIActivity.ActivityType.airDrop, UIActivity.ActivityType.addToReadingList]
            self.present(activityVC, animated: true, completion: nil)
        }
+       
 
    }
     

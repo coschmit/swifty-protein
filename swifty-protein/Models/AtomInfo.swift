@@ -37,7 +37,7 @@ class getAtomInfo {
                 jsonResult = try JSONDecoder().decode(Elements.self, from: data) as Elements?
                 return jsonResult
             } catch {
-                print("error vse dela")
+                print("error")
             }
         }
         return jsonResult
