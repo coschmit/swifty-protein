@@ -1,4 +1,5 @@
-# Swifty Protein
+# Swifty Protein 
+<img src="https://github.com/coschmit/swifty-protein/blob/main/README_img/logo-mollecule.png" alt="" width="50"/>
 
 🇫🇷
 Creation d'une application native IOS , permettant la modélisation de ligands 3d. 
